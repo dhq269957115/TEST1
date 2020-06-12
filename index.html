@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ul1" style="list-style:none;">
+			<li>111</li>
+			<li>222</li>
+			<li>333</li>
+		</ul>
+		<br>
+		<input type="button" value="add" onclick="add1()" />
+		<script type="text/javascript">
+				var num = 4;
+				function add1(){
+					var ul1 = document.getElementById("ul1");
+					var li1 = document.createElement("li");
+					var text = document.createTextNode(num.toString()+num.toString()+num.toString());
+					num++;
+					li1.appendChild(text);
+					ul1.appendChild(li1);
+				}
+		</script>
+	</body>
+</html>
